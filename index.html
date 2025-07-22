@@ -1,0 +1,68 @@
+<!-- index.html  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" 
+          content="width=device-width, 
+                   initial-scale=1.0" />
+    <link rel="stylesheet" href="styl.css" />
+    <title>Password Generator</title>
+</head>
+<body>
+  <div class="card-wrapper">
+    <div class="header-box">
+      <h1>Personal
+        Password Generator</h1>
+    </div>
+    <div class="generator">
+      <!-- Password field -->
+      <div class="password">
+        <input type="text" value="test" />
+        <button>copy</button>
+      </div>
+
+      <!-- Range slider -->
+      <div class="range">
+        <input type="range" min="4" max="24" value="8" />
+        <span>8</span>
+      </div>
+
+      <!-- Options -->
+      <div class="options">
+        <div class="option">
+          <label>
+            <input type="checkbox" id="lowercaseCb" checked />
+            <span>a-z</span>
+          </label>
+        </div>
+        <div class="option">
+          <label>
+            <input type="checkbox" id="uppercaseCb" />
+            <span>A-Z</span>
+          </label>
+        </div>
+        <div class="option">
+          <label>
+            <input type="checkbox" id="digitsCb" />
+            <span>0-9</span>
+          </label>
+        </div>
+        <div class="option">
+          <label>
+            <input type="checkbox" id="specialsCb" />
+            <span>!@$#%^</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Generate Button -->
+      <button class="generate">generate</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
